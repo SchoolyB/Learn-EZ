@@ -1,0 +1,28 @@
+import @std
+
+const Person struct {
+    name string
+    age int
+    isProgrammer bool
+}
+
+
+do main(){
+    temp p1 = new(Person)
+    temp p2 = new(Person)
+
+    p1.name = "Marshall"
+    p1.age = 30
+    p1.isProgrammer = true
+
+    p2.name = "John"
+    p2.age = 60
+    p2.isProgrammer = false
+
+    temp myArray [Person] = {p1, p2}
+
+    for_each person in myArray {
+        std.println(person)
+    }
+}
+

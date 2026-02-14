@@ -1,0 +1,15 @@
+import @std
+
+do main(){
+    temp sumOne = add(10, 5)
+    temp sumTwo = add(7, 9)
+    temp total = add(sumOne, sumTwo)
+
+    std.println(total)
+}
+
+
+do add(x int, y int) -> int{
+    temp z = x + y
+    return z
+}

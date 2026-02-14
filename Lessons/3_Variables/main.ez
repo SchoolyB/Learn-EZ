@@ -1,0 +1,12 @@
+import @std
+
+temp age int = 30
+const name string = "Marshall"
+
+temp myArray [int] = {1,2,3,4}
+const myOtherArray [int,3] = {1,2,3}
+
+do main(){
+
+
+}
