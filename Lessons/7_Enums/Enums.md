@@ -1,7 +1,6 @@
 # Lesson 7: Enums
 
 - What are enums?
-- Integer enums (default)
+- Integer enums
 - String enums
-- Flags enums (#flags)
-- Using enums with structs (tie-back to Lesson 6)
+- Using enums with structs

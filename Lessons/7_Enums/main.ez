@@ -1,6 +1,34 @@
 import @std
 
+const TrafficLightCode enum {
+    RED
+    YELLOW
+    GREEN
+}
+
+const LightColor enum {
+    RED = "Red"
+    YELLOW = "Yellow"
+    GREEN = "Green"
+}
+
+const Example struct {
+    lightCode TrafficLightCode
+    color LightColor
+}
+
 do main(){
+    temp example = new(Example)
 
+    example.lightCode = TrafficLightCode.YELLOW
+    example.color = LightColor.RED
 
+    std.println(example)
+
+    when example.lightCode {
+        is TrafficLightCode.RED{
+            std.println("STOP! The light is red")
+        }
+        default {std.println("Defaulted")}
+    }
 }
